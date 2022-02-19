@@ -1,3 +1,65 @@
-.abc {
-  @apply bg-red-500 text-3xl font-bold underline;
+.page {
+  
+}
+
+.hero {
+  background-color: #AD0E76;
+  @apply text-3xl text-white h-80;
+}
+
+.hero > .wrapper {
+  @apply container h-full mx-auto max-w-4xl flex flex-col items-center justify-center relative;
+}
+
+.hero > .wrapper > .slogan { 
+  @apply text-4xl w-full font-medium flex-1 flex items-center justify-center flex-col;
+}
+
+.hero > .wrapper > .slogan > .teamName {
+  @apply text-4xl font-medium text-center;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.hero > .wrapper > .slogan > .teamName:after {
+  content: 'The Good Neighbor';
+  letter-spacing: 0em;
+  word-spacing: .1em;
+  @apply block text-sm opacity-30 uppercase;
+}
+
+.hero > .wrapper > .smile {
+  top: 145px;
+  @apply absolute w-44 h-14 overflow-hidden;
+}
+
+.hero > .wrapper > .smile:before,
+.hero > .wrapper > .smile:after{
+  content: '';
+  @apply absolute;
+}
+
+.hero > .wrapper > .smile:before {
+  @apply absolute w-40 h-40 rounded-full;
+  border: 10px solid #FFFFFF;
+  box-sizing: border-box;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.hero > .wrapper > .heroFooter {
+  @apply w-full text-center h-24 flex items-center justify-center text-sm flex-col;
+}
+.hero > .wrapper > .heroFooter > .nameList {
+  @apply flex flex-wrap justify-center px-10;
+}
+
+.hero > .wrapper > .heroFooter > .nameList > li {
+  @apply mr-2;
+}
+
+.hero > .wrapper > .heroFooter:after {
+  content: '富貴莊園第二屆管委員候選人';
+  @apply opacity-30;
 }
