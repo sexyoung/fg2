@@ -1,5 +1,5 @@
 .page {
-  
+  @apply bg-gray-50;
 }
 
 .hero {
@@ -7,7 +7,7 @@
   @apply text-3xl text-white h-80;
 }
 
-.hero > .wrapper {
+.wrapper {
   @apply container h-full mx-auto max-w-4xl flex flex-col items-center justify-center relative;
 }
 
@@ -62,4 +62,49 @@
 .hero > .wrapper > .heroFooter:after {
   content: '富貴莊園第二屆管委員候選人';
   @apply opacity-30;
+}
+
+main > .wrapper > .title {
+  color: #AD0E76;
+  font-family: 'Noto Serif TC', serif;
+  @apply text-center text-3xl font-medium font-semibold py-10;
+}
+
+main > .wrapper > .neighborList {
+  @apply w-full grid gap-4 gap-y-16 lg:grid-cols-3 sm:grid-cols-2;
+}
+
+main > .wrapper > .neighborList > .neighbor {
+  @apply text-center;
+}
+
+main > .wrapper > .neighborList > .neighbor > .image {
+  @apply w-max mx-auto rounded-full overflow-hidden w-48 h-48;
+}
+
+main > .wrapper > .neighborList > .neighbor > .name {
+  color: #AD0E76;
+  font-family: 'Noto Serif TC', serif;
+  @apply text-4xl font-semibold pt-4;
+}
+
+main > .wrapper > .neighborList > .neighbor > .name:before {
+  font-family: serif;
+  content: attr(data-candidate) '棟候選人';
+  @apply opacity-30 uppercase block text-xl tracking-normal;
+}
+
+main > .wrapper > .neighborList > .neighbor > .name:after {
+  content: attr(data-slogan);
+  @apply text-2xl block font-bold tracking-normal;
+}
+
+main > .wrapper > .neighborList > .neighbor > a {
+  font-family: serif;
+  @apply text-gray-500 underline font-semibold text-lg;
+}
+
+.footer {
+  color: #AD0E76;
+  @apply text-center py-7;
 }

@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/index.module.css'
 
 const Home: NextPage = () => {
@@ -32,6 +34,25 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+      <main>
+        <div className={styles.wrapper}>
+          <div className={styles.title}>各棟好鄰居候選人</div>
+          <div className={styles.neighborList}>
+            {[...Array(10)].map(i =>
+              <div key={i} className={styles.neighbor}>
+                <div className={styles.image}>
+                  <Image src="https://picsum.photos/200" alt="neighbor" width={192} height={192} />
+                </div>
+                <div className={styles.name} data-candidate="a" data-slogan="推動三驗 事不宜遲">陳重宏</div>
+                <Link href="/">關於重宏的完整政見</Link>
+              </div>
+            )}
+          </div>
+        </div>
+      </main>
+      <footer className={styles.footer}>
+        2022 富貴好鄰競選會 ®
+      </footer>
     </div>
   )
 }
