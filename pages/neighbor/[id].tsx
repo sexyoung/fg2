@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Layout from '../../components/layout';
 import style from './style.module.css';
 
 const contentList = [
@@ -14,7 +15,7 @@ const floorList = ['A', 'B', 'C', 'D', 'E', 'F', '不', '不', '不', '不'];
 
 export default function Neighbor() {
   return (
-    <div className={style.page}>
+    <Layout>
       <div className={style.header}>
         <div className={style.wrapper}>
           <Link href='/'>富貴好鄰</Link>
@@ -38,6 +39,6 @@ export default function Neighbor() {
           ))}
         </ul>
       </div>
-    </div>
+    </Layout>
   )
 }

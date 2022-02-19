@@ -1,7 +1,3 @@
-.page {
-  @apply bg-gray-50;
-}
-
 .hero {
   background-color: #AD0E76;
   @apply text-3xl text-white h-80;
@@ -102,9 +98,4 @@ main > .wrapper > .neighborList > .neighbor > .name:after {
 main > .wrapper > .neighborList > .neighbor > a {
   font-family: serif;
   @apply text-gray-500 underline font-semibold text-lg;
-}
-
-.footer {
-  color: #AD0E76;
-  @apply text-center py-7;
 }

@@ -1,0 +1,8 @@
+.papge {
+  @apply relative bg-gray-50;
+}
+
+.footer {
+  color: #AD0E76;
+  @apply text-center py-7;
+}

@@ -2,11 +2,12 @@ import type { NextPage } from 'next'
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import Layout from '../components/layout';
 import styles from '../styles/index.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.page}>
+    <Layout>
       <Head>
         <title>富貴好鄰</title>
         <meta name="description" content="富貴好鄰" />
@@ -50,10 +51,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <footer className={styles.footer}>
-        2022 富貴好鄰競選會 ®
-      </footer>
-    </div>
+    </Layout>
   )
 }
 
