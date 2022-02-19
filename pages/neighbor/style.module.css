@@ -1,9 +1,9 @@
-.container {
+.page {
   position: relative;
 }
 
 .header {
-  @apply text-lg text-white;
+  @apply text-lg text-white text-center;
   font-weight: 700;
   padding: 7px 11px;
   letter-spacing: 0.1em;
@@ -11,32 +11,36 @@
   font-family: Noto Serif TC;
 }
 
+.wrapper {
+  @apply container mx-auto max-w-4xl ;
+}
+
 .content {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center relative;
 
 }
 
 .floor {
   position: absolute;
-  top: 60px;
+  top: 20px;
   right: 15px;
 }
 
 .floorItem {
-  width: 19px;
-  height: 19px;
+  width: 25px;
+  height: 25px;
   color: #FFF;
-  margin: 5px;
+  margin-bottom: 8px;
   font-size: 11px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 25px;
   text-align: center;
   border-radius: 50%;
   background-color: #AD0E76;
 }
 
 .image {
-  @apply mt-9 mb-5 h-48 w-48 bg-gray-200 rounded-full text-center;
+  @apply mt-9 mb-5 h-48 w-48 bg-gray-200 rounded-full text-center overflow-hidden;
 }
 
 .info {

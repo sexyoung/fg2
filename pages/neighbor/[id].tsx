@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 import style from './style.module.css';
 
 const contentList = [
@@ -9,25 +10,33 @@ const contentList = [
   '的這國病著界媽這一，動公代如了善密回境大，市別所都動造接是星覺求來高師眾調。'
 ];
 
-const floorList = ['A', 'B', 'C', 'D', 'E', 'F', '不'];
+const floorList = ['A', 'B', 'C', 'D', 'E', 'F', '不', '不', '不', '不'];
 
 export default function Neighbor() {
   return (
-    <div className={style.container}>
-      <div className={style.header}><Link href='/'>富貴好鄰</Link></div>
-      <div className={style.floor}>
-        {floorList.map((floor, index) => (
-          <div key={index} className={style.floorItem}>{floor}</div>
-        ))}
+    <div className={style.page}>
+      <div className={style.header}>
+        <div className={style.wrapper}>
+          <Link href='/'>富貴好鄰</Link>
+        </div>
       </div>
-      <div className={style.content}>
-        <div className={style.image}>image</div>
+      <div className={`${style.content} ${style.wrapper}`}>
+        <div className={style.floor}>
+          {floorList.map((floor, index) => (
+            <div key={index} className={style.floorItem}>{floor}</div>
+          ))}
+        </div>
+        <div className={style.image}>
+          <Image src="https://picsum.photos/200" alt="neighbor" width={192} height={192} />
+        </div>
         <div className={style.info}>A棟候選人</div>
         <div className={style.name}>陳重宏</div>
         <div className={style.slogan}>推動三驗 事不宜遲</div>
-        {contentList.map((item, index) => (
-          <li key={index} className={style.list}>{item}</li>
-        ))}
+        <ul>
+          {contentList.map((item, index) => (
+            <li key={index} className={style.list}>{item}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )

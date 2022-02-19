@@ -44,7 +44,7 @@ const Home: NextPage = () => {
                   <Image src="https://picsum.photos/200" alt="neighbor" width={192} height={192} />
                 </div>
                 <div className={styles.name} data-candidate="a" data-slogan="推動三驗 事不宜遲">陳重宏</div>
-                <Link href="/">關於重宏的完整政見</Link>
+                <Link href="/neighbor/abc">關於重宏的完整政見</Link>
               </div>
             )}
           </div>
