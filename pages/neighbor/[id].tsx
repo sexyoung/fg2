@@ -1,13 +1,34 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link'
+import style from './style.module.css';
+
+const contentList = [
+  '相股形氣化和能我風旅實大已來以為中不能了情是室最，方灣華中生沒日氣方說內選親權。',
+  '具世而化客，球紀只想送同去是公者中工刻畫？吃而媽方，無一體大事政代想用。',
+  '是利是，強色石傳，財候大美般可？不市明十，平的護最不曾種裡人正主港學生雖今指小爸。',
+  '的這國病著界媽這一，動公代如了善密回境大，市別所都動造接是星覺求來高師眾調。'
+];
+
+const floorList = ['A', 'B', 'C', 'D', 'E', 'F', '不'];
 
 export default function Neighbor() {
   return (
-    <div>
-      <div>預設字型</div>
-      <div style={{fontSize: 100}}>我是內頁</div>
-
-      <div>特別字 font-family: 'Noto Serif TC'</div>
-      <a style={{fontSize: 100}}>我是內頁</a>
+    <div className={style.container}>
+      <div className={style.header}><Link href='/'>富貴好鄰</Link></div>
+      <div className={style.floor}>
+        {floorList.map((floor, index) => (
+          <div key={index} className={style.floorItem}>{floor}</div>
+        ))}
+      </div>
+      <div className={style.content}>
+        <div className={style.image}>image</div>
+        <div className={style.info}>A棟候選人</div>
+        <div className={style.name}>陳重宏</div>
+        <div className={style.slogan}>推動三驗 事不宜遲</div>
+        {contentList.map((item, index) => (
+          <li key={index} className={style.list}>{item}</li>
+        ))}
+      </div>
     </div>
   )
 }

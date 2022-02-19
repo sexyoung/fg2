@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+}
+
+.header {
+  @apply text-lg text-white;
+  font-weight: 700;
+  padding: 7px 11px;
+  letter-spacing: 0.1em;
+  background-color: #AD0E76;
+  font-family: Noto Serif TC;
+}
+
+.content {
+  @apply flex flex-col items-center;
+
+}
+
+.floor {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+}
+
+.floorItem {
+  width: 19px;
+  height: 19px;
+  color: #FFF;
+  margin: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #AD0E76;
+}
+
+.image {
+  @apply mt-9 mb-5 h-48 w-48 bg-gray-200 rounded-full text-center;
+}
+
+.info {
+  color: #AD0E764D;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #AD0E76;
+  line-height: 52px;
+  font-family: Noto Serif TC;
+}
+
+.slogan {
+  color: #AD0E76;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 14px;
+  font-family: Noto Serif TC;
+}
+
+.list {
+  font-size: 18px;
+  font-weight: 400;
+  color: #884571;
+  text-align: left;
+  line-height: 25px;
+  margin: 10px 24px;
+  list-style: none;
+}
