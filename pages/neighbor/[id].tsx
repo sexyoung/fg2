@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
-import React from 'react';
+import type { NextPage } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../../components/layout';
@@ -41,10 +41,19 @@ interface Props {
 }
 
 const Home: NextPage<Props> = ({ allNeighborsData, neighborData }) => {
-  console.log(allNeighborsData);
-  
   return (
     <Layout>
+      <Head>
+        <title>{neighborData.build.toUpperCase()} - {neighborData.name}的完整政見</title>
+        <meta name="description" content={`富貴莊園第二屆管委員候選人${neighborData.name}的完整政見`} />
+
+        <meta property="og:url" content={`https://fg2.vercel.app/neighbor/${neighborData.id}`} />
+        <meta property="og:title" content={`${neighborData.build.toUpperCase()} - ${neighborData.name}的完整政見`} />
+        <meta property="og:description" content={`富貴莊園第二屆管委員候選人${neighborData.name}的完整政見`} />
+        <meta property="og:image" content="/logo.png" />
+
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={`${style.content} ${style.wrapper}`}>
         <div className={style.floor}>
           {allNeighborsData.map((neighbor, index) => (
