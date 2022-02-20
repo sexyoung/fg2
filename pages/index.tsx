@@ -25,7 +25,7 @@ interface Props {
 
 const Home: NextPage<Props> = ({ allNeighborsData }) => {
   return (
-    <Layout>
+    <Layout isHome {...{ allNeighborsData }}>
       <Head>
         <title>富貴好鄰</title>
         <meta name="description" content="富貴好鄰" />

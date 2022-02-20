@@ -1,15 +1,18 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import styles from './layout.module.css';
 
 import { Neighbor } from "./type";
 import { getSortedNeighborsData } from '../lib/neighbors';
 
 export async function getStaticProps() {
-  const allNeighborsData = getSortedNeighborsData();
+  // console.log(getSortedNeighborsData);
+  
+  // const allNeighborsData = getSortedNeighborsData();
   
   return {
     props: {
-      allNeighborsData
+      // allNeighborsData
     }
   }
 }
@@ -40,7 +43,13 @@ const Layout: NextPage<Props> = ({ allNeighborsData, children, isHome = false })
             </div>
           </div>
         </div>
-      : ''}
+      :
+        <div className={styles.header}>
+          <div className={styles.wrapper}>
+            <Link href='/'>富貴好鄰</Link>
+          </div>
+        </div>
+      }
       {children}
       <footer className={styles.footer}>
         2022 富貴好鄰競選會 ®

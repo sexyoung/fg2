@@ -45,11 +45,6 @@ const Home: NextPage<Props> = ({ allNeighborsData, neighborData }) => {
   
   return (
     <Layout>
-      <div className={style.header}>
-        <div className={style.wrapper}>
-          <Link href='/'>富貴好鄰</Link>
-        </div>
-      </div>
       <div className={`${style.content} ${style.wrapper}`}>
         <div className={style.floor}>
           {allNeighborsData.map((neighbor, index) => (

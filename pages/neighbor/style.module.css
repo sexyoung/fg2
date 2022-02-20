@@ -1,16 +1,3 @@
-.header {
-  @apply text-lg text-white text-center;
-  font-weight: 700;
-  padding: 7px 11px;
-  letter-spacing: 0.1em;
-  background-color: #AD0E76;
-  font-family: Noto Serif TC;
-}
-
-.wrapper {
-  @apply container mx-auto max-w-4xl relative;
-}
-
 .content {
   @apply flex flex-col items-center relative;
 
