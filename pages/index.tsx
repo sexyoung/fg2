@@ -2,12 +2,14 @@ import type { NextPage } from 'next'
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import LogRocket from 'logrocket';
 import Layout from '../components/layout';
 import styles from '../styles/index.module.css';
 
-
 import { Neighbor } from "../components/type";
 import { getSortedNeighborsData } from '../lib/neighbors';
+
+LogRocket.init('sexyoung/fg2');
 
 export async function getStaticProps() {
   const allNeighborsData = getSortedNeighborsData();
