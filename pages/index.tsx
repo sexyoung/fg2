@@ -50,6 +50,14 @@ const Home: NextPage<Props> = ({ allNeighborsData }) => {
 
         gtag('config', 'G-J90VJZV6C9');`
       }} />
+      <Script id="hotjar" dangerouslySetInnerHTML={{__html: `(function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:2840927,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}} />
       <main>
         <div className={styles.wrapper}>
           <div className={styles.title}>各棟好鄰居候選人</div>
