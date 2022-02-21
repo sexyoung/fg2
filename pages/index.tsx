@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Script from 'next/script'
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -39,6 +40,16 @@ const Home: NextPage<Props> = ({ allNeighborsData }) => {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-J90VJZV6C9" />
+      <Script id="script" dangerouslySetInnerHTML={{
+        __html: `window.dataLayer = window.dataLayer || [];
+        /**  */
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-J90VJZV6C9');`
+      }} />
       <main>
         <div className={styles.wrapper}>
           <div className={styles.title}>各棟好鄰居候選人</div>
