@@ -33,7 +33,7 @@ type Neighbor = {
   name: string;
   image: string;
   slogan: string;
-  politics: string[];
+  contentHtml: string;
 }
 
 interface Props {
@@ -82,13 +82,14 @@ const Home: NextPage<Props> = ({ allNeighborsData, neighborData }) => {
           ))}
         </div>
         <div className={style.image}>
-          <Image src="https://picsum.photos/200" alt="neighbor" width={192} height={192} />
+          <Image src={neighborData.image} alt="neighbor" width={192} height={192} />
         </div>
         <div className={style.info}>{neighborData.build}候選人</div>
         <div className={style.name}>{neighborData.name}</div>
         <div className={style.slogan}>{neighborData.slogan}</div>
-        <div className={`${style.content} ${style.policy}`}>
-          {neighborData.politics}
+        <div className={style.contentHtml} dangerouslySetInnerHTML={{__html:
+          neighborData.contentHtml
+        }}>
         </div>
       </div>
     </Layout>

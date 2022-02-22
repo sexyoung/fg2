@@ -1,6 +1,5 @@
 .content {
   @apply flex flex-col items-center relative;
-
 }
 
 .floor {
@@ -46,9 +45,20 @@
   font-family: Noto Serif TC;
 }
 
-.policy {
+.contentHtml {
   font-weight: 400;
   color: #884571;
   line-height: 25px;
   @apply text-lg px-10 lg:max-w-xl;
+}
+
+.contentHtml h2 {
+  @apply text-xl font-bold mt-6 underline;
+}
+.contentHtml ul {
+  @apply list-disc list-inside;
+}
+
+.contentHtml ol {
+  @apply list-decimal list-inside;
 }

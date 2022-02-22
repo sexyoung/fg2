@@ -35,7 +35,7 @@ main > .wrapper > .neighborList > .neighbor > .name:before {
 
 main > .wrapper > .neighborList > .neighbor > .name:after {
   content: attr(data-slogan);
-  @apply text-2xl block font-bold tracking-normal;
+  @apply text-xl block font-bold tracking-normal;
 }
 
 main > .wrapper > .neighborList > .neighbor > a {
