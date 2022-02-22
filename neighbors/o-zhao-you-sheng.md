@@ -1,8 +1,8 @@
 ---
-sn: 0
+sn: 3
 build: '不分區'
 name: '趙祐晟'
-slogan: '提出問題、解決問題、社區樂齡'
+slogan: '依法行政 按律執勤'
 image: '/o-zhao-you-sheng.jpg'
 ---
 ## 資訊安全系統工程師十三年資歷、現任職內湖科學園區

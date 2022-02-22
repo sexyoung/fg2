@@ -1,7 +1,7 @@
 ---
-sn: 0
+sn: 14
 build: 'E棟'
-name: 'Stan'
+name: '陳志揚'
 slogan: '公開透明、傾聽民意、積極執行'
 image: 'https://picsum.photos/200'
 ---

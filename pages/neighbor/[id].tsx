@@ -85,7 +85,12 @@ const Home: NextPage<Props> = ({ allNeighborsData, neighborData }) => {
           <Image src={neighborData.image} alt="neighbor" width={192} height={192} />
         </div>
         <div className={style.info}>{neighborData.build}候選人</div>
-        <div className={style.name}>{neighborData.name}</div>
+        <div className={style.name}>
+          <span className={style.sn}>
+            {neighborData.sn > 0 ? neighborData.sn : '　'}
+          </span>
+          {neighborData.name}
+        </div>
         <div className={style.slogan}>{neighborData.slogan}</div>
         <div className={style.contentHtml} dangerouslySetInnerHTML={{__html:
           neighborData.contentHtml
