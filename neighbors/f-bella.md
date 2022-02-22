@@ -1,7 +1,7 @@
 ---
 sn: 8
 build: 'F~I棟'
-name: 'Bella'
+name: '羅敏'
 slogan: '認真的女人最美麗'
 image: '/f-bella.jpg'
 ---
