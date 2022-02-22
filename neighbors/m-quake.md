@@ -3,7 +3,7 @@ sn: 2
 build: '不分區'
 name: '邱柏洋'
 slogan: '社區舒適與安全，問題透明系統管理'
-image: 'https://picsum.photos/200'
+image: '/m-quake.jpg'
 ---
 ## 系統整合工程師8年
 - 做事盡可能溝通需求，讓問題減少重複發生次數，整合系統，讓事件透明化並量化已幫助管理

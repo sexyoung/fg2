@@ -3,7 +3,7 @@ sn: 14
 build: 'E棟'
 name: '陳志揚'
 slogan: '公開透明、傾聽民意、積極執行'
-image: 'https://picsum.photos/200'
+image: '/e-stan.jpg'
 ---
 ## 曾任慧榮科技(NASDAQ: SIMO)產品經理，目前任職於瑞昱半導體集團相關IC設計公司擔任產品總監職務。
 
