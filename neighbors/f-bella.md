@@ -1,5 +1,6 @@
 ---
 sn: 8
+sc: ⑧
 build: 'F~I棟'
 name: '羅敏'
 slogan: '認真的女人最美麗'

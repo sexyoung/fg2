@@ -1,5 +1,6 @@
 ---
 sn: 16
+sc: ⑯
 build: 'D棟'
 name: '謝安育'
 slogan: '理性思考 和平對談'

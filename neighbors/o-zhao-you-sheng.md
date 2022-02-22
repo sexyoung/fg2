@@ -1,5 +1,6 @@
 ---
 sn: 3
+sc: ③
 build: '不分區'
 name: '趙祐晟'
 slogan: '依法行政 按律執勤'
