@@ -60,10 +60,19 @@
 .contentHtml h2 {
   @apply text-xl font-bold mt-6 underline;
 }
+
 .contentHtml ul {
-  @apply list-disc list-inside;
+  @apply list-disc list-outside ;
 }
 
 .contentHtml ol {
-  @apply list-decimal list-inside;
+  @apply list-decimal list-outside font-bold;
+}
+
+.contentHtml li:first-of-type {
+  @apply mt-4;
+}
+
+.contentHtml li {
+  @apply mb-3;
 }
