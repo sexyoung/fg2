@@ -65,6 +65,13 @@
   @apply list-disc list-outside ;
 }
 
+.contentHtml ul ul,
+.contentHtml ol ul,
+.contentHtml ol ol,
+.contentHtml ul ol {
+  @apply pl-4;
+}
+
 .contentHtml ol {
   @apply list-decimal list-outside font-bold;
 }
