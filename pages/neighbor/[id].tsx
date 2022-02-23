@@ -97,6 +97,8 @@ const Home: NextPage<Props> = ({ allNeighborsData, neighborData }) => {
           neighborData.contentHtml
         }}>
         </div>
+        <div className="line-it-button" data-lang="zh_Hant" data-type="share-a" data-env="REAL" data-url={`https://fg2.vercel.app/neighbor/${neighborData.id}`} data-color="default" data-size="large" data-count="false" data-ver="3" style={{"display": "none"}}></div>
+        <Script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async={true} defer={true}></Script>
       </div>
     </Layout>
   )
