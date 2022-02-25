@@ -74,7 +74,7 @@ const Home: NextPage<Props> = ({ allNeighborsData }) => {
                   {neighbor.name}
                 </div>
                 <Link href={`/neighbor/${neighbor.id}`}>
-                  <a>關於{neighbor.name}的完整政見</a>
+                  <a>關於{neighbor.name}的社區經營理念</a>
                 </Link>
               </div>
             )}
