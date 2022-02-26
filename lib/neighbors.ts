@@ -26,9 +26,8 @@ export function getSortedNeighborsData() {
       ...matterResult.data
     }
   });
-  
-  // Sort neighbors by date
-  return allNeighborsData.sort((a, b) => {
+
+  allNeighborsData.sort((a, b) => {
     if (a.id > b.id) {
       return 1
     } else if (a.id < b.id) {
@@ -36,7 +35,12 @@ export function getSortedNeighborsData() {
     } else {
       return 0
     }
-  })
+  });
+
+  return [
+    ...allNeighborsData.slice(0, -3).reverse(),
+    ...allNeighborsData.slice(-3)
+  ];
 }
 
 export function getAllNeighborIds() {
