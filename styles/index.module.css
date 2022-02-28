@@ -15,7 +15,7 @@ main > .wrapper > .buildList {
 
 main > .wrapper > * > .build > .title {
   background-color: #AD0E76;
-  @apply text-white py-1 px-2 text-center mb-7;
+  @apply text-white py-1 px-2 text-center mb-7 text-2xl;
 }
 
 main > .wrapper > * > .build > .neighborList {
