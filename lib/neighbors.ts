@@ -3,10 +3,11 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import { Neighbor } from '../components/type';
 
 const neighborsDirectory = path.join(process.cwd(), 'neighbors');
 
-export function getSortedNeighborsData() {
+export const getSortedNeighborsData = () => {
   // Get file names under /neighbors
   const fileNames = fs.readdirSync(neighborsDirectory)
   const allNeighborsData = fileNames.map(fileName => {
@@ -25,9 +26,9 @@ export function getSortedNeighborsData() {
       id,
       ...matterResult.data
     }
-  });
+  }) as Neighbor[];
 
-  allNeighborsData.sort((a, b) => {
+  return allNeighborsData.sort((a, b) => {
     if (a.id > b.id) {
       return 1
     } else if (a.id < b.id) {
@@ -37,10 +38,10 @@ export function getSortedNeighborsData() {
     }
   });
 
-  return [
-    ...allNeighborsData.slice(0, -3).reverse(),
-    ...allNeighborsData.slice(-3)
-  ];
+  // return [
+  //   ...allNeighborsData.slice(0, -3).reverse(),
+  //   ...allNeighborsData.slice(-3)
+  // ];
 }
 
 export function getAllNeighborIds() {

@@ -14,19 +14,33 @@ LogRocket.init('sexyoung/fg2');
 
 export async function getStaticProps() {
   const allNeighborsData = getSortedNeighborsData();
+  const buildObj: any = {};
   
+  allNeighborsData.forEach(neighbor =>{
+    if(buildObj[neighbor.build]) {
+      buildObj[neighbor.build].push(neighbor);
+    } else {
+      buildObj[neighbor.build] = [neighbor];
+    }
+    buildObj[neighbor.build].sort((a: Neighbor, b: Neighbor) => a.sn - b.sn);
+  });
+
   return {
     props: {
+      buildObj,
       allNeighborsData
     }
   }
 }
 
 interface Props {
+  buildObj: {
+    [build: string]: Neighbor[];
+  }
   allNeighborsData: Neighbor[];
 }
 
-const Home: NextPage<Props> = ({ allNeighborsData }) => {
+const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
   return (
     <Layout isHome {...{ allNeighborsData }}>
       <Head>
@@ -61,7 +75,57 @@ const Home: NextPage<Props> = ({ allNeighborsData }) => {
       <main>
         <div className={styles.wrapper}>
           <div className={styles.title}>各棟好鄰居候選人</div>
-          <div className={styles.neighborList}>
+          <div className={styles.buildList}>
+            {Object.keys(buildObj).slice(0, -1).map(build =>
+              <div key={build} className={styles.build}>
+                <div className={styles.title}>{build}</div>
+                <div className={styles.neighborList}>
+                  {buildObj[build].map((neighbor, index) =>
+                    <div key={index} className={styles.neighbor}>
+                      <div className={styles.image}>
+                        <Image src={neighbor.image} alt="neighbor" width={192} height={192} />
+                      </div>
+                      <div className={styles.name} data-candidate={neighbor.build} data-slogan={neighbor.slogan}>
+                        <span className={styles.sn}>
+                          {neighbor.sn > 0 ? neighbor.sn : '　'}
+                        </span>
+                        {neighbor.name}
+                      </div>
+                      <Link href={`/neighbor/${neighbor.id}`}>
+                        <a>關於{neighbor.name}的社區經營理念</a>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+          <div className={styles.otherBuild}>
+            {Object.keys(buildObj).slice(-1).map(build =>
+              <div key={build} className={styles.build}>
+                <div className={styles.title}>{build}</div>
+                <div className={styles.neighborList}>
+                  {buildObj[build].map((neighbor, index) =>
+                    <div key={index} className={styles.neighbor}>
+                      <div className={styles.image}>
+                        <Image src={neighbor.image} alt="neighbor" width={192} height={192} />
+                      </div>
+                      <div className={styles.name} data-candidate={neighbor.build} data-slogan={neighbor.slogan}>
+                        <span className={styles.sn}>
+                          {neighbor.sn > 0 ? neighbor.sn : '　'}
+                        </span>
+                        {neighbor.name}
+                      </div>
+                      <Link href={`/neighbor/${neighbor.id}`}>
+                        <a>關於{neighbor.name}的社區經營理念</a>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+          {/* <div className={styles.neighborList}>
             {allNeighborsData.map((neighbor, index) =>
               <div key={index} className={styles.neighbor}>
                 <div className={styles.image}>
@@ -78,7 +142,8 @@ const Home: NextPage<Props> = ({ allNeighborsData }) => {
                 </Link>
               </div>
             )}
-          </div>
+          </div> */}
+
         </div>
       </main>
     </Layout>

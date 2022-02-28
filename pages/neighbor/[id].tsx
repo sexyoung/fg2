@@ -7,6 +7,7 @@ import Layout from '../../components/layout';
 
 import * as lib from '../../lib/neighbors';
 import style from './style.module.css';
+import { Neighbor } from '../../components/type';
 
 export async function getStaticPaths() {
   const paths = lib.getAllNeighborIds()
@@ -24,17 +25,6 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
       allNeighborsData: lib.getSortedNeighborsData(),
     }
   }
-}
-
-type Neighbor = {
-  id: string;
-  sn: number;
-  sc: string;
-  build: string;
-  name: string;
-  image: string;
-  slogan: string;
-  contentHtml: string;
 }
 
 interface Props {

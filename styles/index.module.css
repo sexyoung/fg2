@@ -4,41 +4,55 @@ main > .wrapper > .title {
   @apply text-center text-3xl font-medium font-semibold py-10;
 }
 
-main > .wrapper > .neighborList {
-  @apply w-full grid gap-4 gap-y-16 lg:grid-cols-3 sm:grid-cols-2 max-w-4xl mx-auto;
+main > .wrapper > .buildList,
+main > .wrapper > .otherBuild {
+  @apply w-full grid gap-2 gap-y-16 max-w-5xl mx-auto;
 }
 
-main > .wrapper > .neighborList > .neighbor {
-  @apply text-center;
+main > .wrapper > .buildList {
+  @apply lg:grid-cols-2;
 }
 
-main > .wrapper > .neighborList > .neighbor > .image {
-  @apply w-max mx-auto rounded-full overflow-hidden w-48 h-48;
+main > .wrapper > * > .build > .title {
+  background-color: #AD0E76;
+  @apply text-white py-1 px-2 text-center mb-7;
 }
 
-main > .wrapper > .neighborList > .neighbor > .name {
+main > .wrapper > * > .build > .neighborList {
+  @apply lg:flex;
+}
+
+main > .wrapper > * > .build > .neighborList > .neighbor {
+  @apply text-center flex-1 mb-10;
+}
+
+main > .wrapper > * > .build > .neighborList > .neighbor > .image {
+  @apply w-max mx-auto rounded-full overflow-hidden w-40 h-40;
+}
+
+main > .wrapper > * > .build > .neighborList > .neighbor > .name {
   color: #AD0E76;
   font-family: 'Noto Serif TC', serif;
   @apply text-4xl font-semibold pt-4;
 }
 
-main > .wrapper > .neighborList > .neighbor > .name > .sn {
+main > .wrapper > * > .build > .neighborList > .neighbor > .name > .sn {
   @apply text-3xl border-2 rounded-full border-gray-900 w-11 h-11 mr-2 inline-flex justify-center items-center pb-1;
   border-color: #AD0E76;
 }
 
-main > .wrapper > .neighborList > .neighbor > .name:before {
+main > .wrapper > * > .build > .neighborList > .neighbor > .name:before {
   font-family: serif;
   content: attr(data-candidate) '候選人';
   @apply opacity-30 uppercase block text-xl tracking-normal;
 }
 
-main > .wrapper > .neighborList > .neighbor > .name:after {
+main > .wrapper > * > .build > .neighborList > .neighbor > .name:after {
   content: attr(data-slogan);
-  @apply text-xl block font-bold tracking-normal;
+  @apply text-base block font-bold tracking-normal;
 }
 
-main > .wrapper > .neighborList > .neighbor > a {
+main > .wrapper > * > .build > .neighborList > .neighbor > a {
   font-family: serif;
   @apply text-gray-500 underline font-semibold text-lg;
 }
