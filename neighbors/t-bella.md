@@ -1,10 +1,10 @@
 ---
 sn: 8
 sc: ⑧
-build: 'F~I棟'
+build: '不分區'
 name: '羅敏'
 slogan: '認真的女人最美麗'
-image: '/f-bella.jpg'
+image: '/bella.jpg'
 ---
 有事請加line
 

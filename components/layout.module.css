@@ -60,7 +60,7 @@
 }
 
 .hero > .wrapper > .heroFooter:after {
-  content: '富貴莊園第二屆管委員候選人';
+  content: '富貴莊園第三屆管委員候選人';
   @apply opacity-30;
 }
 
