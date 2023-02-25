@@ -2,7 +2,7 @@
 sn: 13
 sc: ⑬
 build: '不分區'
-name: '林易勝'
+name: '林易聖'
 slogan: '解決現有問題 共同提升社區住戶生活品質'
 image: '/lin-sam.jpg'
 ---

@@ -2,7 +2,7 @@
 sn: 11
 sc: ⑪
 build: 'A棟'
-name: '李克強'
+name: '李志強'
 slogan: '法規小幫手'
 image: '/a-li-ke-qiang.jpg'
 ---
