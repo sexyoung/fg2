@@ -1,9 +1,9 @@
 ---
-sn: 8
+sn: 0
 sc: ⑧
 build: 'F~I棟'
 name: '謝士揚'
-slogan: '我技術的一小步，是社區前進的一大步'
+slogan: '技術的一小步，社區的一大步'
 image: '/sexyoung.png'
 ---
 ## 背景

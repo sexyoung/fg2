@@ -92,7 +92,7 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
                         {neighbor.name}
                       </div>
                       <Link href={`/neighbor/${neighbor.id}`}>
-                        <a>關於{neighbor.name}的社區經營理念</a>
+                        <a>社區經營理念</a>
                       </Link>
                     </div>
                   )}
@@ -117,7 +117,7 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
                         {neighbor.name}
                       </div>
                       <Link href={`/neighbor/${neighbor.id}`}>
-                        <a>關於{neighbor.name}的社區經營理念</a>
+                        <a>社區經營理念</a>
                       </Link>
                     </div>
                   )}
@@ -138,7 +138,7 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
                   {neighbor.name}
                 </div>
                 <Link href={`/neighbor/${neighbor.id}`}>
-                  <a>關於{neighbor.name}的社區經營理念</a>
+                  <a>社區經營理念</a>
                 </Link>
               </div>
             )}

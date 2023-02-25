@@ -52,7 +52,7 @@ const Layout: NextPage<Props> = ({ allNeighborsData, children, isHome = false })
       }
       {children}
       <footer className={styles.footer}>
-        2022 富貴好鄰競選會 ®
+        2023 富貴好鄰競選會 ®
       </footer>
     </div>
   );

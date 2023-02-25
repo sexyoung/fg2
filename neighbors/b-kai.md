@@ -1,5 +1,5 @@
 ---
-sn: 7
+sn: 0
 sc: ⑦
 build: 'B棟'
 name: '曾信凱'
