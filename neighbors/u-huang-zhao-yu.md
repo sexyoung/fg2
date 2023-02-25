@@ -4,7 +4,7 @@ sc: ⑧
 build: '不分區'
 name: '黃昭瑜'
 slogan: ''
-image: '/huang-zhao-yu.jpg'
+image: '/huang-zhao-yu.png'
 ---
 內湖科學園區技術副理+兩個小男嬰的爸爸
 富貴莊園是我和家人買的第一個家
