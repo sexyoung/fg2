@@ -3,8 +3,8 @@ sn: 11
 sc: ⑪
 build: 'A棟'
 name: '李志強'
-slogan: '法規小幫手'
-image: '/a-li-ke-qiang.jpg'
+slogan: '共創美好社區'
+image: '/li-ke-qiang.png'
 ---
 ## 台電發電廠員工
 1. 傾聽不同聲音，有效解決社區共同問題。

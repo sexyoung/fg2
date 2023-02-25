@@ -4,7 +4,7 @@ sc: ②
 build: '不分區'
 name: '蔡嘉明'
 slogan: '安全 進步  愛家園'
-image: '/m-cai-jia-ming.jpg'
+image: '/cai-jia-ming.png'
 ---
 我很自私，以為只要將自個家裝潢舒適，自掃門前雪就好。
 2年過去，我更自私了，因為我愛這個社區....富貴莊園
