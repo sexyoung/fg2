@@ -5,18 +5,6 @@ import styles from './layout.module.css';
 import { Neighbor } from "./type";
 import { getSortedNeighborsData } from '../lib/neighbors';
 
-export async function getStaticProps() {
-  // console.log(getSortedNeighborsData);
-  
-  // const allNeighborsData = getSortedNeighborsData();
-  
-  return {
-    props: {
-      // allNeighborsData
-    }
-  }
-}
-
 interface Props {
   isHome?: boolean;
   allNeighborsData?: Neighbor[];
@@ -52,7 +40,7 @@ const Layout: NextPage<Props> = ({ allNeighborsData, children, isHome = false })
       }
       {children}
       <footer className={styles.footer}>
-        2023 富貴好鄰競選會 ®
+        2024 富貴好鄰競選會 ®
       </footer>
     </div>
   );

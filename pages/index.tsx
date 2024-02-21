@@ -45,11 +45,11 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
     <Layout isHome {...{ allNeighborsData }}>
       <Head>
         <title>富貴好鄰</title>
-        <meta name="description" content="富貴莊園第三屆管委員候選人" />
+        <meta name="description" content="富貴莊園第四屆管委員候選人" />
 
         <meta property="og:url" content="https://fg2.vercel.app" />
         <meta property="og:title" content="富貴好鄰" />
-        <meta property="og:description" content="富貴莊園第三屆管委員候選人" />
+        <meta property="og:description" content="富貴莊園第四屆管委員候選人" />
         <meta property="og:image" content="/logo.png" />
 
         <link rel="icon" href="/favicon.ico" />
@@ -92,7 +92,7 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
                         {neighbor.name}
                       </div>
                       <Link href={`/neighbor/${neighbor.id}`}>
-                        <a>社區經營理念</a>
+                        <span>社區經營理念</span>
                       </Link>
                     </div>
                   )}
@@ -117,7 +117,7 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
                         {neighbor.name}
                       </div>
                       <Link href={`/neighbor/${neighbor.id}`}>
-                        <a>社區經營理念</a>
+                        <span>社區經營理念</span>
                       </Link>
                     </div>
                   )}
@@ -125,24 +125,6 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
               </div>
             )}
           </div>
-          {/* <div className={styles.neighborList}>
-            {allNeighborsData.map((neighbor, index) =>
-              <div key={index} className={styles.neighbor}>
-                <div className={styles.image}>
-                  <Image src={neighbor.image} alt="neighbor" width={192} height={192} />
-                </div>
-                <div className={styles.name} data-candidate={neighbor.build} data-slogan={neighbor.slogan}>
-                  <span className={styles.sn}>
-                    {neighbor.sn > 0 ? neighbor.sn : '　'}
-                  </span>
-                  {neighbor.name}
-                </div>
-                <Link href={`/neighbor/${neighbor.id}`}>
-                  <a>社區經營理念</a>
-                </Link>
-              </div>
-            )}
-          </div> */}
 
         </div>
       </main>

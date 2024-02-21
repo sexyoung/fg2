@@ -37,11 +37,11 @@ const Home: NextPage<Props> = ({ allNeighborsData, neighborData }) => {
     <Layout>
       <Head>
         <title>{neighborData.build.toUpperCase()} - {neighborData.sc} {neighborData.name}的社區經營理念</title>
-        <meta name="description" content={`富貴莊園第三屆管委員候選人${neighborData.name}的社區經營理念`} />
+        <meta name="description" content={`富貴莊園第四屆管委員候選人${neighborData.name}的社區經營理念`} />
 
         <meta property="og:url" content={`https://fg2.vercel.app/neighbor/${neighborData.id}`} />
         <meta property="og:title" content={`${neighborData.build.toUpperCase()} - ${neighborData.sc} ${neighborData.name}的社區經營理念`} />
-        <meta property="og:description" content={`富貴莊園第三屆管委員候選人${neighborData.name}的社區經營理念`} />
+        <meta property="og:description" content={`富貴莊園第四屆管委員候選人${neighborData.name}的社區經營理念`} />
         <meta property="og:image" content={neighborData.image} />
 
         <link rel="icon" href="/favicon.ico" />
