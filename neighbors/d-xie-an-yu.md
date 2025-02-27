@@ -4,7 +4,7 @@ sc: ⑯
 build: 'D棟'
 name: '楊伯麟'
 slogan: '理性思考 和平對談'
-image: '/luke.jpg'
+image: '/d-luke.jpg'
 ---
 
 希望能夠更加認識和關心社區，也能夠更加認識和關心彼此.和其他委員一起合作，為社區服務。
