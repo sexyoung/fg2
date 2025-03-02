@@ -40,7 +40,7 @@ const Layout: NextPage<Props> = ({ allNeighborsData, children, isHome = false })
       }
       {children}
       <footer className={styles.footer}>
-        2024 富貴好鄰競選會 ®
+        {new Date().getFullYear()} 富貴好鄰競選會 ®
       </footer>
     </div>
   );
