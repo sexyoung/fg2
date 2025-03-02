@@ -59,11 +59,6 @@
   @apply mr-2;
 }
 
-.hero > .wrapper > .heroFooter:after {
-  content: '富貴莊園第五屆管委員候選人';
-  @apply opacity-30;
-}
-
 .header {
   @apply text-lg text-white text-center;
   font-weight: 700;

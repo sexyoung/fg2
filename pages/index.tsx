@@ -45,11 +45,11 @@ const Home: NextPage<Props> = ({ buildObj, allNeighborsData }) => {
     <Layout isHome {...{ allNeighborsData }}>
       <Head>
         <title>富貴好鄰</title>
-        <meta name="description" content="富貴莊園第五屆管委員候選人" />
+        <meta name="description" content="富貴莊園管委員候選人" />
 
         <meta property="og:url" content="https://fg2.vercel.app" />
         <meta property="og:title" content="富貴好鄰" />
-        <meta property="og:description" content="富貴莊園第五屆管委員候選人" />
+        <meta property="og:description" content="富貴莊園管委員候選人" />
         <meta property="og:image" content="/logo.png" />
 
         <link rel="icon" href="/favicon.ico" />

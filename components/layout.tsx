@@ -28,6 +28,9 @@ const Layout: NextPage<Props> = ({ allNeighborsData, children, isHome = false })
                   </li>
                 ))}
               </ul>
+              <div style={{ opacity: .4}}>
+                富貴莊園第{new Date().getFullYear() - 2020}屆管委員候選人
+              </div>
             </div>
           </div>
         </div>
